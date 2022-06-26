@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" type="text/css" href="tic.css">
+		<script src="tic.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			
+			<h1>TIC TAC TOE</h1>
+
+			<label for="options" id="lbl">Choose an option:</label>
+			<select name="options" id="ops">
+				<option value="pvp">Player vs Player</option>
+				<option value="cvp">Computer vs Player</option>
+			</select>
+
+			<p id="ins">Game starts by just tap on
+				box<br><br>First Player starts as
+				<b>Player X</b><br>And<br>Second
+				Player as <b>Player O</b>
+			</p>
+
+			<br><br>
+
+			<input type="text" id="b1" onclick="writeOnGrid('b1')" readonly>
+			<input type="text" id="b2" onclick="writeOnGrid('b2')" readonly>
+			<input type="text" id="b3" onclick="writeOnGrid('b3')" readonly>
+
+			<br><br>
+
+			<input type="text" id="b4" onclick="writeOnGrid('b4')" readonly>
+			<input type="text" id="b5" onclick="writeOnGrid('b5')" readonly>
+			<input type="text" id="b6" onclick="writeOnGrid('b6')" readonly>
+
+			<br><br>
+
+			<input type="text" id="b7" onclick="writeOnGrid('b7')" readonly>
+			<input type="text" id="b8" onclick="writeOnGrid('b8')" readonly>
+			<input type="text" id="b9" onclick="writeOnGrid('b9')" readonly>
+
+			<br><br><br>
+
+			<button id="but" onclick="resetGrid()">RESET</button>
+
+			<br><br>
+
+			<p id="print">Player X Turn</p>
+
+		</div>
+	</body>
+</html>
